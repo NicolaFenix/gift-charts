@@ -1,0 +1,161 @@
+{
+  "name": "foods",
+  "datacolor": "#fff2cc",
+  "children": [
+    {
+      "name": "Fish",
+      "datacolor": "#204f74",
+      "size": 35,
+      "children": [
+        {"name": "Fresh water fish", "size": 10},
+        {"name": "Marine Fish", "size": 15},
+        {"name": "Shellfish", "size": 2},
+        {"name": "Diadromous fish", "size": 8}
+      ]
+    },
+    {
+      "name": "Cereals",
+      "datacolor": "#204f74",
+      "size": 500,
+      "datacolor": "#bf9100",
+      "children": [
+        {"name": "Cereals 1", "size": 150},
+        {"name": "Cereals 2", "size": 200},
+        {"name": "Cereals 3", "size": 100},
+        {"name": "Cereals 4", "size": 50}
+      ]
+    },
+    {
+      "name": "Fruits",
+      "datacolor": "#c1000b",
+      "size": 40,
+      "children": [
+        {"name": "Fruits 1", "size": 5},
+        {"name": "Fruits 2", "size": 10},
+        {"name": "Fruits 3", "size": 3},
+        {"name": "Fruits 4", "size": 22}
+      ]
+    },
+    {
+      "name": "Vegetables",
+      "datacolor": "#558138",
+      "size": 100,
+      "children": [
+        {"name": "Vegetables 1", "size": 22},
+        {"name": "Vegetables 2", "size": 43},
+        {"name": "Vegetables 3", "size": 7},
+        {"name": "Vegetables 4", "size": 28}
+      ]
+    },
+    {
+      "name": "Roots, tubers and plantains",
+      "datacolor": "#bc8476",
+      "size": 70,
+      "children": [
+        {"name": "Roots, tubers and plantains 1", "size": 10},
+        {"name": "Roots, tubers and plantains 2", "size": 20},
+        {"name": "Roots, tubers and plantains 3", "size": 5},
+        {"name": "Roots, tubers and plantains 4", "size": 35}
+      ]
+    },
+    {
+      "name": "Pulses",
+      "datacolor": "#6c5980",
+      "size": 60,
+      "children": [
+        {"name": "Pulses 1", "size": 5},
+        {"name": "Pulses 2", "size": 20},
+        {"name": "Pulses 3", "size": 30},
+        {"name": "Pulses 4", "size": 5}
+      ]
+    },
+    {
+      "name": "Fats and oils",
+      "datacolor": "#853a12",
+      "size": 40,
+      "children": [
+        {"name": "Fats and oils 1", "size": 10},
+        {"name": "Fats and oils 2", "size": 15},
+        {"name": "Fats and oils 3", "size": 5},
+        {"name": "Fats and oils 4", "size": 20}
+      ]
+    },
+    {
+      "name": "Sweet and sugar",
+      "datacolor": "#853a12",
+      "size": 30,
+      "children": [
+        {"name": "Sweet and sugar 1", "size": 10},
+        {"name": "Sweet and sugar 2", "size": 5},
+        {"name": "Sweet and sugar 3", "size": 5},
+        {"name": "Sweet and sugar 4", "size": 10}
+      ]
+    },
+    {
+      "name": "Red Palm Products",
+      "datacolor": "#60d581",
+      "size": 60,
+      "children": [
+        {"name": "Red Palm Products 1", "size": 10},
+        {"name": "Red Palm Products 2", "size": 20},
+        {"name": "Red Palm Products 3", "size": 20},
+        {"name": "Red Palm Products 4", "size": 10}
+      ]
+    },
+    {
+      "name": "Spices and condiments",
+      "datacolor": "#58a1c5",
+      "size": 60,
+      "children": [
+        {"name": "Spices and condiments 1", "size": 6},
+        {"name": "Spices and condiments 2", "size": 14},
+        {"name": "Spices and condiments 3", "size": 20},
+        {"name": "Spices and condiments 4", "size": 20}
+      ]
+    },
+    {
+      "name": "Meat",
+      "datacolor": "#c45a1a",
+      "size": 30,
+      "children": [
+        {"name": "Meat 1", "size": 5},
+        {"name": "Meat 2", "size": 5},
+        {"name": "Meat 3", "size": 5},
+        {"name": "Meat 4", "size": 15}
+      ]
+    },
+    {
+      "name": "Eggs",
+      "datacolor": "#fffa32",
+      "size": 20,
+      "children": [
+        {"name": "Eggs 1", "size": 8},
+        {"name": "Eggs 2", "size": 2},
+        {"name": "Eggs 3", "size": 4},
+        {"name": "Eggs 4", "size": 6}
+      ]
+    },
+    {
+      "name": "Milk Products",
+      "datacolor": "#56a2c9",
+      "size": 15,
+      "children": [
+        {"name": "Milk Products 1", "size": 2},
+        {"name": "Milk Products 2", "size": 1},
+        {"name": "Milk Products 3", "size": 11},
+        {"name": "Milk Products 4", "size": 2}
+      ]
+    },
+    {
+      "name": "Insects",
+      "datacolor": "#7b7f77",
+      "size": 10,
+      "children": [
+        {"name": "Insects 1", "size": 1},
+        {"name": "Insects 2", "size": 2},
+        {"name": "Insects 3", "size": 3},
+        {"name": "Insects 4", "size": 7}
+      ]
+    }
+  ]
+}

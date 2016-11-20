@@ -1,0 +1,320 @@
+@import 'utils/fx-utils';
+
+$width: 300px;
+
+
+body{
+  font-family: "FrutigerLTW02-45Light", Arial, Helvetica, Verdana, sans-serif;
+  background-color:#f0f0f0;
+  font-size: 13px;
+}
+
+
+
+.legend{
+  position: relative;
+  top: 50px;
+
+  ul{
+    li{
+      margin: 10px 0;
+
+    }
+
+  }
+}
+
+.marker{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px;
+}
+
+
+.fao-holder{
+  width: 960px;
+  margin: 0 auto;
+}
+
+
+// D3
+
+
+.node {
+  cursor: pointer;
+}
+
+.node:hover {
+  stroke: #FFFFFF;
+  stroke-width: 1.5px;
+}
+
+.node--leaf {
+  fill: white;
+  opacity: 0.2;
+}
+
+.label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.quantity {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root{
+  pointer-events: none;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  -moz-box-shadow:    0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  box-shadow:         0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+
+}
+
+
+// Bar
+
+
+.bar-holder{
+  width: $width;
+  position: relative;
+}
+
+
+.bar-mask{
+  position: absolute;
+  width: $width;
+  height: 200px;
+  top: 50px;
+  background-image: url(../img/bar/mask.png);
+  background-size: contain;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+
+// Stacked
+
+
+.stacked-holder{
+  width: $width;
+  position: relative;
+}
+
+.stacked-mask{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: $width;
+  height: $width;
+  background-image: url('../img/stacked/stacked.png');
+  background-size: contain;
+  background-position: 50% 50%;
+  z-index: 1;
+}
+
+
+#stacked-legend{
+
+  .marker{
+
+
+    &.not-spec{
+      background-color: #333333;
+    }
+
+    &.others{
+      background-color: #139ee1;
+    }
+
+    &.meat{
+      background-color: #830219;
+    }
+
+    &.fish{
+      background-color: #9ed9e9;
+    }
+
+    &.pulses{
+      background-color: #fe7d2f;
+    }
+
+    &.vegetable{
+      background-color: #b8e434;
+    }
+
+    &.cereals{
+      background-color: #fec82b;
+    }
+
+
+
+
+  }
+
+
+}
+
+
+
+
+
+// Pie
+
+.pie-holder{
+  position: relative;
+  width: $width;
+
+
+
+  .highcharts-label{
+    position: relative;
+    z-index: 2;
+
+
+  }
+
+  &:hover{
+
+    .actual-label, .recommended-label{
+      opacity: 1;
+    }
+
+  }
+
+  .actual-label, .recommended-label{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    @include animate();
+  }
+
+  .actual-label{
+    top: 170px;
+  }
+
+  .recommended-label{
+    top: 265px;
+  }
+
+
+
+
+
+}
+
+#pie-legend{
+
+
+
+
+
+
+  .marker{
+
+
+    &.carbohydrates{
+      background-color: #fcc00d;
+
+      &.alpha{
+        position: relative;
+        opacity: 0.5;
+
+        &:before{
+          content: '';
+          height: 100%;
+          width: 50%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background-color: #fcc00d;
+
+
+        }
+
+
+      }
+
+    }
+
+    &.protein{
+      background-color: #bf1818;
+
+      &.alpha{
+        position: relative;
+        opacity: 0.5;
+
+        &:before{
+          content: '';
+          height: 100%;
+          width: 50%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background-color: #fcc00d;
+
+
+        }
+
+
+      }
+
+
+    }
+
+    &.fats{
+      background-color: #2e76b7;
+
+      &.alpha{
+        position: relative;
+        opacity: 0.5;
+
+        &:before{
+          content: '';
+          height: 100%;
+          width: 50%;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          background-color: #fcc00d;
+
+
+        }
+
+
+      }
+
+    }
+
+
+
+
+
+  }
+
+
+}
+
+
+.pie-label, .highcharts-text-outline, .stacked-label{
+  font-family: "FrutigerLTW02-45Light", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 15px;
+}

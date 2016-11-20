@@ -1,0 +1,170 @@
+body {
+  font-family: "FrutigerLTW02-45Light", Arial, Helvetica, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  font-size: 13px; }
+
+.legend {
+  position: relative;
+  top: 50px; }
+  .legend ul li {
+    margin: 10px 0; }
+
+.marker {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+  position: relative;
+  top: 2px; }
+
+.fao-holder {
+  width: 960px;
+  margin: 0 auto; }
+
+.node {
+  cursor: pointer; }
+
+.node:hover {
+  stroke: #FFFFFF;
+  stroke-width: 1.5px; }
+
+.node--leaf {
+  fill: white;
+  opacity: 0.2; }
+
+.label {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }
+
+.quantity {
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-anchor: middle;
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff; }
+
+.label,
+.node--root {
+  pointer-events: none; }
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  font: 12px sans-serif;
+  background: white;
+  border: 0px;
+  pointer-events: none;
+  -webkit-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  -moz-box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.27);
+  box-shadow: 0px 4px 3px 0px rgba(50, 50, 50, 0.27); }
+
+.bar-holder {
+  width: 300px;
+  position: relative; }
+
+.bar-mask {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  top: 50px;
+  background-image: url(../img/bar/mask.png);
+  background-size: contain;
+  background-position: 50% 50%;
+  z-index: 1; }
+
+.stacked-holder {
+  width: 300px;
+  position: relative; }
+
+.stacked-mask {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 300px;
+  height: 300px;
+  background-image: url("../img/stacked/stacked.png");
+  background-size: contain;
+  background-position: 50% 50%;
+  z-index: 1; }
+
+#stacked-legend .marker.not-spec {
+  background-color: #333333; }
+#stacked-legend .marker.others {
+  background-color: #139ee1; }
+#stacked-legend .marker.meat {
+  background-color: #830219; }
+#stacked-legend .marker.fish {
+  background-color: #9ed9e9; }
+#stacked-legend .marker.pulses {
+  background-color: #fe7d2f; }
+#stacked-legend .marker.vegetable {
+  background-color: #b8e434; }
+#stacked-legend .marker.cereals {
+  background-color: #fec82b; }
+
+.pie-holder {
+  position: relative;
+  width: 300px; }
+  .pie-holder .highcharts-label {
+    position: relative;
+    z-index: 2; }
+  .pie-holder:hover .actual-label, .pie-holder:hover .recommended-label {
+    opacity: 1; }
+  .pie-holder .actual-label, .pie-holder .recommended-label {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .pie-holder .actual-label {
+    top: 170px; }
+  .pie-holder .recommended-label {
+    top: 265px; }
+
+#pie-legend .marker.carbohydrates {
+  background-color: #fcc00d; }
+  #pie-legend .marker.carbohydrates.alpha {
+    position: relative;
+    opacity: 0.5; }
+    #pie-legend .marker.carbohydrates.alpha:before {
+      content: '';
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #fcc00d; }
+#pie-legend .marker.protein {
+  background-color: #bf1818; }
+  #pie-legend .marker.protein.alpha {
+    position: relative;
+    opacity: 0.5; }
+    #pie-legend .marker.protein.alpha:before {
+      content: '';
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #fcc00d; }
+#pie-legend .marker.fats {
+  background-color: #2e76b7; }
+  #pie-legend .marker.fats.alpha {
+    position: relative;
+    opacity: 0.5; }
+    #pie-legend .marker.fats.alpha:before {
+      content: '';
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      background-color: #fcc00d; }
+
+.pie-label, .highcharts-text-outline, .stacked-label {
+  font-family: "FrutigerLTW02-45Light", Arial, Helvetica, Verdana, sans-serif;
+  font-size: 15px; }

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="src/css/charts.css"/>
+
+
+    <!-- Frutiger -->
+    <link href=" http://fast.fonts.com/cssapi/0ad75cee-12a6-49a0-a922-c4ecad41ec44.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="fx-sandbox fao-holder" style="background-color: white;">
+
+    <br/><br/><br/>
+
+
+
+    <div class="container-fluid" >
+
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-5 col-offset-xs-2">
+                <svg width="450" height="450" id="bubble"></svg>
+            </div>
+        </div>
+        <hr/>
+
+
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-5 col-offset-xs-2">
+                <div id="bar-details">TEXT</div>
+                <div class="bar-holder">
+                    <div class="bar-mask"></div>
+                    <div id="bar"></div>
+                </div>
+
+            </div>
+        </div>
+        <hr/>
+
+        <div class="row">
+            <div class="col-xs-4"></div>
+            <div class="col-xs-3">
+                <div class="progress">
+                    <div id='columns-progress-bar' class="progress-bar" role="progressbar" aria-valuenow="0"  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="columns-holder">
+                    <div id="columns"></div>
+                    <div class="axis"></div>
+                </div>
+            </div>
+
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-xs-4"></div>
+
+            <div class="col-xs-5">
+                <div class="stacked-holder">
+                    <div class="stacked-mask"></div>
+                    <div id="stacked"></div>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div id="stacked-legend" class="legend">
+                    <ul class="list-unstyled">
+                        <li><span class="marker not-spec"></span>Not Specified</li>
+                        <li><span class="marker others"></span>Others</li>
+                        <li><span class="marker fish"></span>Fish</li>
+                        <li><span class="marker pulses"></span>Pulses</li>
+                        <li><span class="marker vegetable"></span>Vegetables</li>
+                        <li><span class="marker cereals"></span> Cereals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="col-xs-4"></div>
+
+            <div class="col-xs-5">
+                <div class="pie-holder">
+                    <div id="pie"></div>
+                    <div class="actual-label text-center"><b>ACTUAL</b></div>
+                    <div class="recommended-label text-center"><b>RECOMMENDED</b></div>
+                </div>
+
+            </div>
+            <div class="col-xs-3">
+                <div id="pie-legend" class="legend">
+                    <ul class="list-unstyled">
+                        <li><span class="marker carbohydrates"></span> Carbohydrates - actual</li>
+                        <li><span class="marker protein"></span> Protein - actual</li>
+                        <li><span class="marker fats"></span> Fats - actual</li>
+                        <li><span class="marker carbohydrates alpha"></span> Carbohydrates - recommended</li>
+                        <li><span class="marker protein alpha"></span> Protein - recommended</li>
+                        <li><span class="marker fats alpha"></span> Fats - recommended</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr/>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="https://highcharts.github.io/pattern-fill/pattern-fill.js"></script>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="./src/js/charts.js"></script>
+
+</body>
+</html>
