@@ -9,6 +9,9 @@ body{
   font-size: 13px;
 }
 
+.row{
+  min-height: 300px;
+}
 
 
 .legend{
@@ -30,7 +33,7 @@ body{
   width: 15px;
   margin-right: 5px;
   position: relative;
-  top: 2px;
+  top: 3px;
 }
 
 
@@ -97,17 +100,149 @@ div.tooltip {
   position: relative;
 }
 
+.bar-details{
+  width: 300px;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #bbbbbb;
+
+  .percentage{
+    color: red;
+  }
+}
 
 .bar-mask{
   position: absolute;
   width: $width;
   height: 200px;
-  top: 50px;
   background-image: url(../img/bar/mask.png);
   background-size: contain;
   background-position: 50% 50%;
   z-index: 1;
 }
+
+
+// Columns
+
+
+.population-percentage{
+  width: 200px;
+  height: 45px;
+  @include fx-noshadow;
+  border: 1px solid #bbbbbb;
+  background-image: url(../img/columns/population-bg.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+
+
+  .progress-bar{
+    background-color: rgba(red, 0.5);
+    border: 1px solid red;
+    @include fx-noshadow;
+  }
+
+}
+
+.population-text{
+  width: 200px;
+  color: #ab6830;
+
+  .percentage{
+    color: #9bba61;
+  }
+
+  .item{
+    color: #9bba61;
+  }
+
+}
+
+.column-text{
+  color: #ab6830;
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  z-index: 1;
+}
+
+.columns-holder{
+  width: 300px;
+  position: relative;
+
+  .axis{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../img/columns/axis.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+
+
+  }
+
+
+  .details{
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background-image: url(../img/columns/details.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    top: 170px;
+    line-height: 10px;
+
+    span{
+      display: block;
+      margin: 3px 0;
+    }
+
+    .percentage{
+      font-size: 16px;
+      margin: 14px 0 5px 0;
+    }
+
+    .text{
+      font-size: 10px;
+      color: orange;
+    }
+    .amount{
+      font-size: 10px;
+    }
+
+    &.low{
+      left:20px
+    }
+
+    &.medium{
+      left: 112px;
+    }
+
+    &.high{
+      left: 202px;
+
+      .amount{
+        color: red;
+
+      }
+
+    }
+
+  }
+
+
+}
+
 
 
 // Stacked

@@ -3,6 +3,9 @@ body {
   background-color: #f0f0f0;
   font-size: 13px; }
 
+.row {
+  min-height: 300px; }
+
 .legend {
   position: relative;
   top: 50px; }
@@ -15,7 +18,7 @@ body {
   width: 15px;
   margin-right: 5px;
   position: relative;
-  top: 2px; }
+  top: 3px; }
 
 .fao-holder {
   width: 960px;
@@ -62,15 +65,104 @@ div.tooltip {
   width: 300px;
   position: relative; }
 
+.bar-details {
+  width: 300px;
+  padding: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #bbbbbb; }
+  .bar-details .percentage {
+    color: red; }
+
 .bar-mask {
   position: absolute;
   width: 300px;
   height: 200px;
-  top: 50px;
   background-image: url(../img/bar/mask.png);
   background-size: contain;
   background-position: 50% 50%;
   z-index: 1; }
+
+.population-percentage {
+  width: 200px;
+  height: 45px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #bbbbbb;
+  background-image: url(../img/columns/population-bg.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-top: 100px; }
+  .population-percentage .progress-bar {
+    background-color: rgba(255, 0, 0, 0.5);
+    border: 1px solid red;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+
+.population-text {
+  width: 200px;
+  color: #ab6830; }
+  .population-text .percentage {
+    color: #9bba61; }
+  .population-text .item {
+    color: #9bba61; }
+
+.column-text {
+  color: #ab6830;
+  position: absolute;
+  width: 100%;
+  top: -10px;
+  z-index: 1; }
+
+.columns-holder {
+  width: 300px;
+  position: relative; }
+  .columns-holder .axis {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(../img/columns/axis.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat; }
+  .columns-holder .details {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    background-image: url(../img/columns/details.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    z-index: 1;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    top: 170px;
+    line-height: 10px; }
+    .columns-holder .details span {
+      display: block;
+      margin: 3px 0; }
+    .columns-holder .details .percentage {
+      font-size: 16px;
+      margin: 14px 0 5px 0; }
+    .columns-holder .details .text {
+      font-size: 10px;
+      color: orange; }
+    .columns-holder .details .amount {
+      font-size: 10px; }
+    .columns-holder .details.low {
+      left: 20px; }
+    .columns-holder .details.medium {
+      left: 112px; }
+    .columns-holder .details.high {
+      left: 202px; }
+      .columns-holder .details.high .amount {
+        color: red; }
 
 .stacked-holder {
   width: 300px;

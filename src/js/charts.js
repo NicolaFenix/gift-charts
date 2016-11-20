@@ -12,7 +12,7 @@ $(function () {
         renderBar();
 
         renderColumns();
-        
+
         renderStackedColumn();
 
         renderPie();
@@ -125,7 +125,7 @@ $(function () {
     function renderBar() {
 
         $('#bar').css({
-            height: HEIGHT,
+            height: 200,
             width: WIDTH
         }).highcharts({
 
